@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechVision Pro - Business Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 overflow-x-hidden"
+  >
+    <!-- Improved Navigation -->
+    <nav
+      class="sticky top-0 w-full bg-white/5 backdrop-blur-md z-50 border-b border-white/10"
+    >
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
+      >
+        <img src="assets/images/logow.svg" alt="Logo" class="h-12 w-auto" />
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 text-white">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobileMenuButton"
+          class="md:hidden text-white p-2 rounded-lg hover:bg-white/10"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="md:hidden absolute top-full left-0 right-0 bg-gray-900/95 hidden"
+      >
+        <div class="container mx-auto px-4 py-4 flex flex-col space-y-4 text-white">
+          <a href="#home" class="nav-link-mobile">Home</a>
+          <a href="#features" class="nav-link-mobile">Features</a>
+          <a href="#pricing" class="nav-link-mobile">Pricing</a>
+          <a href="#contact" class="nav-link-mobile">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section
+      id="home"
+      class="pt-32 pb-[130px] h-auto px-4 sm:px-6 lg:px-8 hero-animate scroll-animate bg"
+    >
+      <div class="container mx-auto text-center">
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate__animated animate__fadeInUp"
+        >
+          Transform Your Business With
+          <span
+            class="bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text block mt-4"
+          >
+            Next-Gen Solutions
+          </span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+          Empower your organization with our enterprise-grade solutions designed
+          for scalability and performance.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <button
+            class="cta-primary bg-transparent rounded-lg border border-white/5 py-3 px-4 text-white shadow-lg"
+          >
+            Start Free Trial
+          </button>
+          <button
+            class="cta-secondary bg-transparent rounded-lg border border-white/5 py-3 px-4 text-white shadow-lg"
+          >
+            Schedule Demo
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Refined Features Section -->
+    <section
+      id="features"
+      class="py-20 pb-20 h-auto bg-white/5 backdrop-blur-lg"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading text-3xl font-semibold text-white">Core Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <!-- Feature 1 -->
+          <div
+            class="feature-card transform hover:-translate-y-2 pb-[100px] rounded-xl border border-cyan-500/30 shadow-lg"
+          >
+            <div
+              class="feature-icon bg-cyan-500/20 rounded-lg py-2 px-2 rounded-b-none"
+            >
+              <svg
+                class="w-10 h-10 text-cyan-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <h3 class="feature-title px-2 py-2">Cloud Integration</h3>
+            <p class="feature-description px-2 py-2">
+              Seamless integration with AWS, Azure, and Google Cloud platforms.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="feature-card transform hover:-translate-y-2 pb-[100px] rounded-xl border border-purple-500/30 shadow-lg"
+          >
+            <div
+              class="feature-icon bg-purple-500/20 rounded-lg py-2 px-2 rounded-b-none"
+            >
+              <svg
+                class="w-10 h-10 text-purple-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                />
+              </svg>
+            </div>
+            <h3 class="feature-title py-2 px-2">Advanced Analytics</h3>
+            <p class="feature-description py-2 px-2">
+              Real-time business intelligence and data visualization tools.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="feature-card transform hover:-translate-y-2 pb-[100px] rounded-xl border border-green-500/30 shadow-lg"
+          >
+            <div
+              class="feature-icon bg-green-500/20 rounded-lg py-2 px-2 rounded-b-none"
+            >
+              <svg
+                class="w-10 h-10 text-green-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                />
+              </svg>
+            </div>
+            <h3 class="feature-title py-2 px-2">Enterprise Security</h3>
+            <p class="feature-description py-2 px-2">
+              Military-grade encryption and compliance management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-900/50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <span class="flex items-center justify-center uppercase text-white font-light pb-6">Plans & Benefits</span>
+          <h2 class="section-heading text-3xl font-semibold flex items-center justify-center text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500">Choose your plan <br> Unlock endless possibilities</h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 justify-items-center"
+        >
+          <!-- Starter Plan -->
+          <div
+            class="pricing-card transform hover:scale-105 stagger-animate card-hover border border-cyan-500/30 px-4 py-2 rounded-lg"
+          >
+            <div class="pricing-header items-center justify-center">
+              <h3 class="pricing-title mb-4 text-cyan-400">Starter</h3>
+              <div class="pricing-price">
+                <span class="text-4xl font-bold text-white">$49</span>
+                <span class="text-gray-400">/month</span>
+              </div>
+              <p class="text-gray-400">Perfect for small teams</p>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="text-cyan-400">✓</span> Up to 5 Users</li>
+              <li><span class="text-cyan-400">✓</span> Basic Analytics</li>
+              <li><span class="text-cyan-400">✓</span> 24/7 Support</li>
+              <li><span class="text-cyan-400">✓</span> 50GB Storage</li>
+            </ul>
+            <button
+              class="pricing-button bg-transparent rounded-lg border border-white/5 py-2 px-2 text-white shadow-lg mt-4 mx-3">
+              Get Started
+            </button>
+          </div>
+
+          <!-- Professional Plan -->
+          <div
+            class="pricing-card bg-gradient-to-br rounded-lg px-5 pt-2 pb-6 from-cyan-500/20 to-blue-500/20 transform hover:scale-105 stagger-animate card-hover"
+          >
+            <div class="pricing-header">
+                <span class="w-fit flex items-start justify-end relative left-[90px] right-0 mb-4 bg-gradient-to-r from-gray-500 to-blue-500 py-1 px-2 text-sm rounded-md text-white shadow-2xl">Most Popular</span>
+              <h3 class="pricing-title uppercase text-cyan-500 font-semibold mb-4">Pro</h3>
+              <div class="pricing-price">
+                <span class="text-4xl font-bold text-white">$99</span>
+                <span class="text-gray-400">/month</span>
+              </div>
+              <p class="text-gray-400">For growing businesses</p>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="text-cyan-400">✓</span> Up to 20 Users</li>
+              <li><span class="text-cyan-400">✓</span> Advanced Analytics</li>
+              <li><span class="text-cyan-400">✓</span> Priority Support</li>
+              <li><span class="text-cyan-400">✓</span> 200GB Storage</li>
+            </ul>
+            <button
+              class="pricing-button bg-sky-500 hover:shadow-2xl border border-white/5 shadow-lg font-semibold py-2 px-2 rounded-lg mt-4 mx-3">
+              Popular Choice
+            </button>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div
+            class="pricing-card transform hover:scale-105 stagger-animate card-hover border border-cyan-500/30 px-6 py-2 rounded-lg"
+          >
+            <div class="pricing-header">
+              <h3 class="pricing-title mb-4 text-cyan-400">Enterprise</h3>
+              <div class="pricing-price">
+                <span class="text-4xl font-bold text-white">$299</span>
+                <span class="text-gray-400">/month</span>
+              </div>
+              <p class="text-gray-400">Custom solutions</p>
+            </div>
+            <ul class="pricing-features">
+              <li><span class="text-cyan-400">✓</span> Unlimited Users</li>
+              <li><span class="text-cyan-400">✓</span> Custom Analytics</li>
+              <li><span class="text-cyan-400">✓</span> 24/7 VIP Support</li>
+              <li><span class="text-cyan-400">✓</span> 1TB Storage</li>
+            </ul>
+            <button
+              class="pricing-button bg-transparent rounded-lg border border-white/5 py-2 px-2 text-white shadow-lg mt-4 mx-3">
+              Contact Sales
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Contact Form -->
+    <section id="contact" class="py-20 bg-white/5 backdrop-blur-lg">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading font-semibold text-3xl text-white">Contact Us</h2>
+        <div class="max-w-2xl mx-auto mt-12">
+          <form id="contactForm" class="space-y-6 items-center justify-center flex flex-col">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  class="form-input bg-white/5 backdrop-blur-md py-2 px-2 rounded-lg"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="form-input bg-white/5 backdrop-blur-md py-2 px-2 rounded-lg"
+                  required
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    class="form-input bg-white/5 backdrop-blur-md py-2 px-2 rounded-lg"
+                    />
+                </div>
+                <div>
+                    <select
+                    class="form-input bg-white/5 backdrop-blur-md py-2 px-2 rounded-lg w-[220px] text-gray-400"
+                    >
+                    <option value="" class="bg-gray-900 text-cyan-400">Select Service</option>
+                    <option class="bg-gray-900 backdrop-blur-md z-50">Cloud Solutions</option>
+                    <option class="bg-gray-900 backdrop-blur-md z-50">Analytics</option>
+                    <option class="bg-gray-900 backdrop-blur-md z-50">Security</option>
+                </select>
+            </div>
+        </div>
+            <div>
+              <textarea
+                rows="8"
+                cols="40"
+                placeholder="Your Message here..."
+                class="form-input bg-white/5 backdrop-blur-md py-2 px-2 rounded-lg text-white"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="cta-primary py-3 px-6 text-lg  rounded-lg bg-transparent rounded-lg border border-white/5 text-white shadow-lg hover:bg-cyan-500 hover:text-black hover:font-semibold"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/90 py-12">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center text-gray-400">
+          <p>© 2025 TechVision Pro. All rights reserved | Developed by <span class="font-semibold text-cyan-500">Ali Hassan.</span></p>
+          <div class="mt-4 flex justify-center space-x-6">
+            <a href="#" class="hover:text-cyan-400 transition-colors"
+              >Privacy Policy</a
+            >
+            <a href="#" class="hover:text-cyan-400 transition-colors"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

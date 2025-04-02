@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Custom Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+button:hover{
+    background-color: rgba(0, 195, 255, 0.712);
+}
+.nav-link {
+    @apply text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md transition-colors duration-300 text-base font-medium;
+}
+
+.nav-link-mobile {
+    @apply text-gray-300 hover:text-cyan-400 px-4 py-3 rounded-lg transition-colors duration-300 text-lg;
+}
+
+.section-heading {
+    @apply text-3xl sm:text-4xl font-bold text-white text-center mb-12 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-cyan-500 after:mx-auto after:mt-4;
+}
+
+.feature-card {
+    @apply bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-cyan-500/30 transition-all duration-300;
+}
+
+.feature-icon {
+    @apply w-16 h-16 rounded-xl flex items-center justify-center mb-6 transition-all duration-300;
+}
+
+.feature-title {
+    @apply text-xl font-semibold text-white mb-4;
+}
+
+.feature-description {
+    @apply text-gray-400 leading-relaxed;
+}
+
+.pricing-card {
+    @apply bg-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-cyan-500/30 transition-all duration-300;
+}
+
+.pricing-header {
+    @apply text-center mb-8;
+}
+
+.pricing-title {
+    @apply text-2xl font-bold text-white mb-2;
+}
+
+.pricing-price {
+    @apply text-4xl font-bold text-white mb-4;
+}
+
+.pricing-features {
+    @apply space-y-4 mb-8;
+}
+
+.pricing-features li {
+    @apply text-gray-400 flex items-center gap-2;
+}
+
+.pricing-button {
+    @apply w-full bg-gray-800 hover:bg-cyan-500 text-white py-3 rounded-lg transition-all duration-300 font-medium;
+}
+
+.cta-primary {
+    @apply bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-xl transform hover:scale-105 transition-all duration-300 font-medium text-lg;
+}
+
+.cta-secondary {
+    @apply bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-8 py-4 rounded-xl transform hover:scale-105 transition-all duration-300 font-medium text-lg;
+}
+
+.form-input {
+    @apply w-full bg-gray-900/50 border border-white/10 rounded-lg px-6 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all;
+}
+
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .pricing-card {
+        @apply max-w-md mx-auto;
+    }
+    
+    .feature-card {
+        @apply max-w-sm mx-auto;
+    }
+}
+
+
+
+
+/* <<<<<<<<<<<<<<<<------------------------->>>>>>>>>>>>>>>>>>> */
+
+/* Custom Animation Styles */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate__fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* Hover Animations */
+.hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+}
+
+.card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2;
+}
+
+.glow-effect {
+    @apply transition-shadow duration-300 hover:shadow-lg hover:shadow-cyan-500/20;
+}
