@@ -6,6 +6,7 @@
     scroll-behavior: smooth;
 }
 
+
 button:hover{
     background-color: rgba(0, 195, 255, 0.712);
 }
@@ -127,3 +128,4 @@ button:hover{
 .glow-effect {
     @apply transition-shadow duration-300 hover:shadow-lg hover:shadow-cyan-500/20;
 }
+
